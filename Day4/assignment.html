@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigment of Level 3</title>
+  </head>
+  <body>
+    <section>
+      <h1>Student Information</h1>
+      <table border="1">
+        <tr>
+          <th rowspan="7">Info</th>
+          <th rowspan="2">Name</th>
+          <th colspan="2">Address</th>
+        </tr>
+        <tr>
+          <th>City</th>
+          <th>House No</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>Khulna</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>Jashore</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>Dhaka</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>Jashore</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>Jhenidha</td>
+          <td>5</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <form action="/action">
+        <h1>Info Form</h1>
+        <div>
+          <label for="name">Name : </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="sex">Sex : </label>
+          <input type="radio" name="sex" id="male" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="sex" id="female" value="female" />
+          <label for="female">Female</label>
+        </div>
+        <br />
+        <div>
+          <label for="country">Country : </label>
+          <select name="country" id="country">
+            <option value="bd">Bangladesh</option>
+            <option value="usa">USA</option>
+            <option value="nepal">Nepal</option>
+            <option value="india">India</option>
+            <option value="aus">Australia</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="message">Message : </label><br />
+          <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" name="subscribe" id="subscribe" />
+          <label for="subscribe">Subscribe?</label>
+        </div>
+        <br />
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <form action="/action">
+        <h1>Feedback Form</h1>
+        <div>
+          <label for="name">Name : </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email : </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="message">Message : </label><br />
+
+          <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="rate">Rate us our of 5:</label>
+          <br />
+          <input type="radio" name="rate" id="1" value="1" />
+          <label for="1">1</label><br />
+          <input type="radio" name="rate" id="2" value="2" />
+          <label for="2">2</label><br />
+          <input type="radio" name="rate" id="3" value="3" />
+          <label for="3">3</label><br />
+          <input type="radio" name="rate" id="4" value="4" />
+          <label for="4">4</label><br />
+          <input type="radio" name="rate" id="5" value="5" />
+          <label for="5">5</label><br />
+        </div>
+        <br />
+        <div>
+          <button>Send your message</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
