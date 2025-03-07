@@ -1,0 +1,42 @@
+.box{
+    width: 70px;
+    height: 230px;
+    border: 2px solid black;
+    background-color: #e6e5e5;
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    /* position: relative; */
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px;
+    /* position: absolute; */
+}
+.red{
+    background: red;
+}
+.yellow{
+    background: yellow;
+}
+.green{
+    background: green;
+}
+/* .circle.red{
+    background-color: red;
+    top: 20px;
+    left: 10px;
+}
+.circle.yellow{
+    background-color: yellow;
+    top: 90px;
+    left: 10px;
+}
+.circle.green{
+    background-color: green;
+    top: 160px;
+    left: 10px;
+} */
