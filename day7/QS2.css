@@ -1,0 +1,51 @@
+.face{
+    width: 200px;
+    height: 200px;
+    background-color: #ee9a1c;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.eye{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 30px;
+}
+.eye.left{
+    left: 50px;
+}
+.eye.right{
+    right: 50px;
+}
+.eye::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+.eye.left::before{
+    right: 0;
+}
+.eye.right::before{
+    left: 0;
+}
+.mouth{
+    width: 100px;
+    height: 40px;
+    background: red;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+
