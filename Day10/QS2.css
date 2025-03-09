@@ -35,3 +35,29 @@ div{
 .footer{
     grid-column: 1/13;
 }
+
+@media only screen and (max-width: 768px) {
+    .header{
+        grid-column: 1/13;
+    }
+    .navigation{
+        grid-column: 1/13;
+        grid-row: 2/3;
+    }
+    .sidebar{
+        grid-column: 1/4;
+        grid-row: 3/12;
+    }
+    .main{
+        grid-column: 4/13;
+        grid-row: 3/12;
+    }
+    .adds{
+        grid-row: 12/13;
+        grid-column: 1/4;
+    }
+    .footer{
+        grid-column: 4/13;
+        grid-row: 12/13;
+    }
+}
