@@ -1,0 +1,14 @@
+ls= list of all files
+
+pwd = print working directory
+
+clear = clear screen
+
+cd = change directory
+
+cd / = for the root directory
+cd ~ = for the home directory
+
+rm = for removing the files
+rmdir = for removing the directory
+rm -rf = recursive and forcely  delete the folder
