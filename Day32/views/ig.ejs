@@ -1,0 +1,22 @@
+<%-  include("includes/head.ejs") %>
+  <body>
+    <h2>Instagram</h2>
+    <h2>This page belongs to <%=data.name %></h2>
+
+    <button>Follow</button>
+    <button>Message</button>
+    <p>
+      Followers : <%=data.followers %> &nbsp; &nbsp; &nbsp; Following :
+      <%=data.following %>
+    </p>
+
+    <h3>Posts</h3>
+    <ul>
+      <% for(let p of data.post){ %>
+      <li>
+        <img src="<%=p.image %>" alt="" width="400" height="400">
+        <p>Likes : <%=p.likes  %>  &nbsp;&nbsp;&nbsp;&nbsp; Comments : <%=p.comments %> </p>
+    </li>
+      <% } %>
+  </body>
+</html>
