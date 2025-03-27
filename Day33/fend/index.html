@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GET & POST Request</title>
+  </head>
+  <body>
+    <h3>GET request form</h3>
+    <form method="get" action="http://localhost:8080/register">
+      <label for="user">Name:</label>
+      <input type="text" id="user" name="user" />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <button type="submit">Register</button>
+    </form>
+    <h3>Post request form</h3>
+    <form method="post" action="http://localhost:8080/register">
+      <label for="user">Name:</label>
+      <input type="text" id="user" name="user" />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
