@@ -1,0 +1,37 @@
+use college
+
+switched to db college
+
+db.student.insertOne({name:"Tajbid",age:21,marks:88})
+
+db.student.find()
+
+db.student.insertOne({name:"Hossain",city:"Jashore",marks:85})
+
+db.student.insertMany([{name:"Bappi",city:"Jhenidah",marks:89},{name:"Md",age:21,marks:90}])
+
+db.student.find({age:21})
+
+db.student.find({_id:ObjectId('67ecb7dd478787a7e9a3b2e6')})
+
+db.student.find({marks:{$gt:88}})
+
+db.student.find({city:{$in:["Jashore","Jhenidah"]}})
+
+db.student.find({$or:[{marks:{$gt:85}},{city:{$in:["Jashore","Jhenidah"]}}]})
+
+db.student.find({$or:[{marks:{$gt:89}},{city:{$in:["Jashore","Jhenidah"]}}]})
+
+db.student.updateOne({name:"Tajbid"},{$set:{marks:99}})
+
+db.student.insertOne({name:"MM",city:"Jashore",marks:88})
+
+db.student.updateMany({city:"Jashore"},{$set:{city:"Jessore"}})
+
+db.store.deleteOne({item:"canvas"})
+
+db.store.deleteMany({qty:{$gt:75}})
+
+db.store.deleteMany({})
+
+db.dropDatabase()
