@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create new Chat</title>
+    <style>
+      .createChatForm {
+        width: 50%;
+        margin: 0px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .createChatForm .box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+      }
+      .createChatForm .box input,
+      .createChatForm .box textarea {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .createChatForm .box label {
+        width: 20%;
+        text-align: left;
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+      .createChatForm .box textarea {
+        height: 100px;
+      }
+      .createChatForm button,
+      a {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .createChatForm button:hover {
+        background-color: #0056b3;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2rem;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="h1">Create a new Chat</h1>
+    <form action="/chats" method="POST" class="createChatForm">
+      <div class="box">
+        <label for="fname">From:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          required
+          placeholder="Who are you?"
+        />
+      </div>
+      <div class="box">
+        <label for="msg">Message:</label>
+        <textarea name="msg" id="msg">Write your message here...</textarea>
+      </div>
+      <div class="box">
+        <label for="tname">To:</label>
+        <input
+          type="text"
+          id="tname"
+          name="tname"
+          required
+          placeholder="Add Receiver"
+        />
+      </div>
+
+      <button type="submit">Create Chat</button>
+    </form>
+    <a class="" href="/chats">Back to Chats</a>
+  </body>
+</html>
