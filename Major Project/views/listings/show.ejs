@@ -1,24 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wanderlust</title>
-  </head>
-  <body>
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="row mt-3">
+  <div class="col-8 offset-2">
     <h3>Listing Details :</h3>
-    <ul>
-      <li><%= listing.title %></li>
-      <li><%= listing.description %></li>
-      <li>&#2547; <%= listing.price.toLocaleString("en-BD") %></li>
-      <li><%= listing.location %></li>
-      <li><%= listing.country %></li>
-    </ul>
-    <br />
-    <a href="/listings/<%= listing._id %>/edit">Edit this Listing</a>
-    <br /><br />
-    <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
-      <button>Delete this listing</button>
-    </form>
-  </body>
-</html>
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4">
+      <div class="card">
+        <img
+          src="<%= listing.image %>"
+          class="card-img-top show-img"
+          alt="listing_image"
+          style="height: 22rem"
+        />
+        <div class="card-body">
+          <div class="show-title">
+            <strong><%= listing.title %></strong>
+          </div>
+          <div class="show-description"><%= listing.description %></div>
+          <div class="show-price">
+            <strong
+              >&#2547; <%= listing.price.toLocaleString("en-BD") %></strong
+            >
+          </div>
+          <div class="show-country"><%= listing.country %></div>
+          <div class="show-location"><%= listing.location %></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3 btns">
+      <div class="col-1">
+        <a
+          href="/listings/<%= listing._id %>/edit"
+          class="btn btn-danger"
+          style="width: 5rem"
+        >
+          Edit</a
+        >
+      </div>
+      <div class="col-1">
+        <form
+          method="POST"
+          action="/listings/<%= listing._id %>?_method=DELETE"
+        >
+          <button type="submit" class="btn btn-dark" style="width: 5rem">
+            Delete
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
