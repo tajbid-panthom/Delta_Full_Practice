@@ -1,12 +1,12 @@
 import React from "react";
-import "./Product.css"; // Assuming you have a CSS file for styling
-const Product = () => {
+import "./Product.css";
+import Price from "./Price";
+const Product = ({ title, description, newPrice, oldPrice }) => {
   return (
     <div className="product">
-      <h2>Product Name</h2>
-      <p>Description of the product goes here.</p>
-      <p>Price: $XX.XX</p>
-      <button>Add to Cart</button>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <Price newPrice={newPrice} oldPrice={oldPrice} />
     </div>
   );
 };
