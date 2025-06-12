@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { getTicket, sum } from "./helper";
 import Ticket from "./Ticket";
 const Lottery = ({ n }) => {
